@@ -1,6 +1,7 @@
 (ns flurg.core
   (:use [overtone.live]
-        [overtone.inst sampled-piano])
+        [overtone.inst sampled-piano]
+        [overtone.gui info control wavetable sequencer mixer stepinator])
   (:require [clojure.string :as s]))
 
 (def upper-case-chars (map char (range 65 91)))
